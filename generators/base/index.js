@@ -5,23 +5,6 @@ var yosay = require('yosay');
 
 module.exports = yeoman.Base.extend({
 
-  prompting: function () {
-    var done = this.async();
-
-    var prompts = [{
-      type: 'input',
-      name: 'serviceName',
-      message: 'name your new service',
-      default: 'service'
-    }];
-
-    this.prompt(prompts, function (props) {
-      this.props = props;
-
-      done();
-    }.bind(this));
-  },
-
   writing: function () {
     this.fs.copyTpl(
       this.templatePath('./**/*'),
@@ -31,6 +14,8 @@ module.exports = yeoman.Base.extend({
   },
 
   end: function () {
-    this.log('run \'cd ' + this.props.serviceName + ' && npm install\' to install your dependencies');
+    this.log();
+    this.log('run \'cd base && npm install\' to install your dependencies');
+    this.log();
   }
 });
