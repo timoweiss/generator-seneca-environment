@@ -9,7 +9,8 @@
     "url": "http://timo-weiss.com"
   },
   "files": [
-    "generators"
+    "generators/app",
+    "generators/service"
   ],
   "main": "generators/index.js",
   "keywords": [
