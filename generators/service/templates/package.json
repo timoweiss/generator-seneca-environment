@@ -1,0 +1,29 @@
+{
+  "name": "<%= serviceName %>",
+  "description": "my awesome service",
+  "keywords": [
+    "seneca",
+    "service",
+    "<%= serviceName %>"
+  ],
+  "license": "MIT",
+  "version": "0.1.0",
+  "main": "./service.js",
+  "scripts": {
+    "test": "ava -v"
+  },
+  "engines": {
+    "node": "4"
+  },
+  "dependencies": {
+    "seneca": "2.0.0",
+    "seneca-balance-client": "^0.4.0",
+    "seneca-mesh": "^0.7.0"
+  },
+  "repository": {
+    "private": true
+  },
+  "devDependencies": {
+    "ava": "^0.14.0"
+  }
+}
