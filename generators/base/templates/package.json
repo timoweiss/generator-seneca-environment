@@ -1,0 +1,16 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "base node for mesh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "seneca": "2.0.0",
+    "seneca-balance-client": "^0.4.0",
+    "seneca-mesh": "^0.7.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
