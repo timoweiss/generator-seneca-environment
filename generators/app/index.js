@@ -27,14 +27,16 @@ module.exports = yeoman.Base.extend({
 
     this.prompt(prompts, function (props) {
       this.props = props;
+
       if (this.props.generator === 'service') {
         this.composeWith('seneca-environment:service');
       } else if (this.props.generator === 'base') {
-        // TODO: add base generator
+        this.composeWith('seneca-environment:base');
       } else {
         this.composeWith('seneca-environment:service');
-        // TODO: add base generator
+        this.composeWith('seneca-environment:base');
       }
+
       done();
     }.bind(this));
   },
